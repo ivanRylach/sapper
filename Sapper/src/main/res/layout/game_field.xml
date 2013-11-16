@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:columnWidth="35dp"
+            android:drawingCacheQuality="high"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="9"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" >
+        </GridView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ic_flagCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/flagged_cell" />
+
+    <TextView
+        android:id="@+id/textFlagCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ic_flagCounter"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingRight="8dp"
+        android:paddingTop="9dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>

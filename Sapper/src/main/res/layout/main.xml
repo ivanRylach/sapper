@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true" >
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/word_about"
+        android:textSize="14dp"
+        android:width="200dp" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/aboutButton"
+        android:layout_alignLeft="@+id/aboutButton"
+        android:layout_marginBottom="10dp"
+        android:text="@string/text_action_bar_new_game"
+        android:textSize="15dp"
+        android:width="200dp" />
+
+    <ImageView
+        android:id="@+id/mainActivityLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newGameButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_256" />
+
+</RelativeLayout>

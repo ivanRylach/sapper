@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sapper</string>
+    
+    <string name="word_hello">Hello World, MainActivity!</string>
+    <string name="word_exit">Exit</string>
+    <string name="word_about">About</string>
+    <string name="logo">Logo</string>
+    
+    <string name="text_action_bar_new_game">New game</string>
+    <string name="text_action_bar_share_with">Share with…</string>
+    <string name="text_share_action_content">I am the best Sapper player!</string>
+    
+    <string name="text_about_content">Sapper is the clasic Minesweeper game. 
+        You have to locate all mines, which number is 10. Good luck!\n\n
+        Created by Ivan Rylach, 2012\n\nivan.rylach@gmail.com</string>
+	
+    <string name="empty"></string>
+	<string name="word_victory">Victory!</string>
+	<string name="text_game_over">Game over</string>
+	
+	
+	
+	
+</resources>
