@@ -18,6 +18,7 @@ import com.ivanrylach.sapper.adapters.ImageAdapter;
 import com.ivanrylach.sapper.cell.Cell;
 import com.ivanrylach.sapper.installer.Installer;
 import com.ivanrylach.sapper.settings.SapperConstants;
+import com.ivanrylach.sapper.utilits.AchievementsProgressStorage;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -37,6 +38,7 @@ public class GameField extends BaseActivity {
 	Cell[] mineField;
 	int[] minePositions;
 	Set<Integer> flaggedCells;
+    int clickNumber;
 	
 	private static final int NEW_GAME = 0x00000001;
 	private static final int SHARE_WITH = 0x00000002;
@@ -81,12 +83,14 @@ public class GameField extends BaseActivity {
 		getSupportActionBar().setDisplayShowTitleEnabled(false);
 		createGameField();
 		initListeners();
+        this.clickNumber = 0;
 		
 	}
 
 	private void initListeners() {
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                clickNumber++;
 				int counter;
 				if (mineField[position].isCovered()	&& !mineField[position].haveFlag()) {
 					
@@ -149,6 +153,8 @@ public class GameField extends BaseActivity {
 		if (numberOfCoveredCells == SapperConstants.MINE_NUMBER) {
 			gridView.setEnabled(false);
 			gameStatusTextView.setText(getResources().getText(R.string.word_victory));
+            AchievementsProgressStorage.getInstance().gamePlayed(true, clickNumber);
+
 		}
 	}
 	
@@ -168,6 +174,7 @@ public class GameField extends BaseActivity {
 		adapter.setThumbId(position, R.drawable.discovered_cell_with_mine);
 		gridView.setEnabled(false);
 		gameStatusTextView.setText(getResources().getText(R.string.text_game_over));
+        AchievementsProgressStorage.getInstance().gamePlayed(false, clickNumber);
 	}
 
 	private void createGameField() {

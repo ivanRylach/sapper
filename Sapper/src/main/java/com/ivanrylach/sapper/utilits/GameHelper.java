@@ -38,7 +38,8 @@ import com.google.android.gms.games.GamesActivityResultCodes;
 import com.google.android.gms.games.GamesClient;
 import com.google.android.gms.games.multiplayer.Invitation;
 import com.google.android.gms.plus.PlusClient;
-import com.google.example.games.basegameutils.R;
+import com.ivanrylach.sapper.R;
+
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

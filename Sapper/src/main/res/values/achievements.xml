@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="long_practice_newbie">CgkI06PI18EGEAIQAg</string>
+    <string name="long_practice_exp">CgkI06PI18EGEAIQAw</string>
+    <string name="long_practice_pro">CgkI06PI18EGEAIQBA</string>
+    <string name="one_by_one_newbie">CgkI06PI18EGEAIQBQ</string>
+    <string name="one_by_one_exp">CgkI06PI18EGEAIQBg</string>
+    <string name="one_by_one_pro">CgkI06PI18EGEAIQBw</string>
+    <string name="bad_day_newbie">CgkI06PI18EGEAIQCA</string>
+    <string name="bad_day_exp">CgkI06PI18EGEAIQCQ</string>
+    <string name="bad_day_pro">CgkI06PI18EGEAIQCg</string>
+    <string name="singularity_5">CgkI06PI18EGEAIQCw</string>
+    <string name="singularity_6">CgkI06PI18EGEAIQDA</string>
+    <string name="singularity_7">CgkI06PI18EGEAIQDQ</string>
+    <string name="singularity_8">CgkI06PI18EGEAIQDg</string>
+
+</resources>
