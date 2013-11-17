@@ -26,7 +26,7 @@ import java.util.Set;
  * @author RIV
  *
  */
-public class GameField extends SherlockActivity {
+public class GameField extends BaseActivity {
 
 	GridView gridView;
 	ImageAdapter adapter;
@@ -38,8 +38,8 @@ public class GameField extends SherlockActivity {
 	int[] minePositions;
 	Set<Integer> flaggedCells;
 	
-	private static final int NEW_GAME = 		0x00000001;
-	private static final int SHARE_WITH = 	0x00000002;
+	private static final int NEW_GAME = 0x00000001;
+	private static final int SHARE_WITH = 0x00000002;
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

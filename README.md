@@ -1,7 +1,7 @@
-sapper
+Sapper
 ======
 
-Claccic minesweeper for Android
+Classic minesweeper for Android
 
 ======
 

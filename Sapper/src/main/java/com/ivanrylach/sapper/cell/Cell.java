@@ -1,20 +1,5 @@
 package com.ivanrylach.sapper.cell;
 
-/**
- * 
- * @author RIV
- * 
- * @param haveMine
- *            mine availability in the cell
- * @param haveFlag
- *            gamer's mine pointer
- * @param counter
- *            shows how many mines are around this cell in case of mine
- *            unavailability
- * @param isCovered
- *            shows if cell were clicked
- */
-
 public class Cell {
 	private boolean haveMine;
 	private boolean haveFlag;
@@ -25,16 +10,8 @@ public class Cell {
 		setDefaultValues();
 	}
 
-    public void setHaveMine(boolean haveMine){
-        this.haveMine = haveMine;
-    }
-
     public void setHaveFlag(boolean haveFlag){
         this.haveFlag = haveFlag;
-    }
-
-    public void setCounter(int counter){
-        this.counter = counter;
     }
 
     public int getCounter(){

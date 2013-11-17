@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.actionbarsherlock.app.SherlockActivity;
 import com.ivanrylach.sapper.R;
+import com.ivanrylach.sapper.utilits.BaseGameActivity;
 
-public class MainActivity extends SherlockActivity {
+public class MainActivity extends BaseGameActivity {
     
 	private Button newGameBtn;
 	private Button aboutBtn;
@@ -41,6 +41,15 @@ public class MainActivity extends SherlockActivity {
 		});
 		
 	}
-		
-		
+
+
+    @Override
+    public void onSignInFailed() {
+
+    }
+
+    @Override
+    public void onSignInSucceeded() {
+
+    }
 }
