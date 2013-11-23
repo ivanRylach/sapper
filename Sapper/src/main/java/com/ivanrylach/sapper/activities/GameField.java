@@ -10,13 +10,12 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.ivanrylach.sapper.R;
 import com.ivanrylach.sapper.adapters.ImageAdapter;
-import com.ivanrylach.sapper.cell.Cell;
-import com.ivanrylach.sapper.installer.Installer;
+import com.ivanrylach.sapper.core.Cell;
+import com.ivanrylach.sapper.core.Installer;
 import com.ivanrylach.sapper.settings.SapperConstants;
 import com.ivanrylach.sapper.utilits.AchievementsProgressStorage;
 

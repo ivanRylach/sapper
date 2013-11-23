@@ -1,14 +1,20 @@
 package com.ivanrylach.sapper.activities;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import com.actionbarsherlock.app.SherlockDialogFragment;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.games.GamesClient;
 import com.ivanrylach.sapper.R;
+import com.ivanrylach.sapper.fragments.AboutDialogFragment;
 import com.ivanrylach.sapper.utilits.AchievementsProgressStorage;
 import com.ivanrylach.sapper.utilits.BaseGameActivity;
 
@@ -63,7 +69,8 @@ public class MainActivity extends BaseGameActivity {
                     }
 
                     case R.id.aboutButton: {
-                        startActivity(new Intent(MainActivity.this, AboutDialog.class));
+//                        startActivity(new Intent(MainActivity.this, AboutDialog.class));
+                        showAboutDialog();
                         break;
                     }
 
@@ -86,6 +93,11 @@ public class MainActivity extends BaseGameActivity {
                 }
             }
         };
+    }
+
+    private void showAboutDialog() {
+        DialogFragment dialogAbout = AboutDialogFragment.newInstance();
+        dialogAbout.show(getSupportFragmentManager(), AboutDialogFragment.TAG);
     }
 
 

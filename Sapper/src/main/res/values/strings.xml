@@ -11,9 +11,10 @@
     <string name="text_action_bar_share_with">Share with…</string>
     <string name="text_share_action_content">I am the best Sapper player!</string>
     
-    <string name="text_about_content">Sapper is the clasic Minesweeper game. 
-        You have to locate all mines, which number is 10. Good luck!\n\n
-        Created by Ivan Rylach, 2012\n\nivan.rylach@gmail.com</string>
+    <string name="text_about_content">Sapper is a classic game "Minesweeper",
+        where you have to locate all 10 mines. Good luck!\n\nClick to discover cell\nLong click to mark mine\n\nCreated by Ivan Rylach, 2013</string>
+
+    <string name="got_it">Got it!</string>
 	
     <string name="empty"></string>
 	<string name="word_victory">Victory!</string>
@@ -24,6 +25,9 @@
     <string name="gamehelper_license_failed">License check failed.</string>
     <string name="gamehelper_unknown_error">Unknown error.</string>
     <string name="app_id">223790371283</string>
+
+    <string name="url_g_plus">http://plus.google.com/+IvanRylach</string>
+    <string name="url_github">https://github.com/ivanRylach/sapper</string>
 	
 	
 	
